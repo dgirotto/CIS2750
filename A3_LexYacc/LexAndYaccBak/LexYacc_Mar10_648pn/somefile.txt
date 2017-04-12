@@ -1,0 +1,5 @@
+title="TheTitle";
+fields={"firstField","secondField"};
+buttons={"buttonOne","buttonTwo"};
+#!#
+astring

@@ -1,0 +1,54 @@
+CIS2750 QUIZ 3 WEDNESDAY:
+REG EXPRESSION QUESTIONS
+PORTABILITY AND PERFORMANCE (TESTING)
+SYSTEM TOOLS: KNOW WHAT THE TOOL'S FOR
+
+DIG SYS (TO REVIEW):
+CASCADING EDGE-TRIGGERED FLIP FLOPS
+SHIFT REGISTERS
+race conditions
+CASCADING FFs FOR PROPER OPERATION
+CLOCK SKEW
+
+A3:
+myprogram -> part1 SEPARARTOR part2
+part1 -> title fields buttons
+TITLE EQ QUO STRING QUO SCOLON
+FIELDS EQ LBRACE exp RBRACE SCOLON
+EXP -> QUO STRING QUO
+EXP -> EXP COMMA EXP
+//SAME FOR BUTTONS
+//reads from bottom-up (field names first, button names, title name)
+part2 -> 
+
+
+A2:
+*** when the user does not provide a .config extension when saving a file, make sure to append it (first test if .config is there)
+
+-graphic buttons
+-NEW:
+--if a project is currently opened (NOT NEW -- openFlag==TRUE): check if it has been changed. if changed,give the user the option to save it
+--if a project is currently NEW (no files opened -- openFlag==FALSE), then the user should be prompted for the name of the saved file(s). Note: the file that is associated with the project should have a .config extension. 
+-OPEN:
+** what if a project is new but it hasn't been changed? ** (may have to implement a "newFlag")
+--if a project is currently opened and modified (openFlag == TRUE and modFlag == TRUE) the user should be given the option to save it if it has been changed
+--if the current project is new (openFlag==FALSE and modFlag==TRUE/FALSE and newProj==TRUE), the user should be prompted for a name for the project; the file associated with the project should have a .config extension
+-SAVE:
+--if the current project is new (modified==TRUE or not) the user should be prompted for a file name for the project (note: add a .config extension)
+-SAVE AS:(save the current opened file/project with a new name)
+--the user should be provided with a dialog to save a project with a new name (keeping in mid the .config extension)
+--IF the project is already named (if newProj==FALSE--keep in mind the .config extension), that name should be already loaded into the filename box
+-QUIT: 
+--if a project is already opened (modFlag==TRUE) the user should be prompted to save it
+
+*** REV DIR CREATION
+-COMPILE: compiles the currently loaded file
+--the compiled application (the collection of .java source files that implements the dialog box) should be created in a subdirectory with the same name as the project file -- with a .java extension). IE: strip ".config" and replace it with ".java"
+--if the project is new and/or unsaved (modFlag==TRUE AND/OR openFlag==TRUE) the user should be prompted to save it, and give it a name. if there already exists a project with the same name ast that which would be created, a yes/no dialog (confirmation) box should be presented asking if the file(s) should be overwritten.
+*** ERRORS IN COMPILATION: should be written to a separate pop-up text window with a scrollbar and a single dismiss button that closes this window.
+--COMPILE AND RUN: identical to the "compile" option. on successful compilation the resulting Java application should be compiled and executed immediately.
+
+-CONFIG:
+--Java Compiler:
+
+

@@ -1,0 +1,29 @@
+title=
+
+"
+TheTitle";
+fields=
+#comment
+{"1stField"
+
+#a comment
+,
+
+
+"secondfield"};
+buttons=
+{"buttonOne"
+
+,"buttonTwo"};
+
+#!#
+#a
+
+1stField="float";
+#yeahhhh
+buttonOne =#innnnnnnnnnnnn
+ "QueryListener";
+buttonTwo = "qlistener";
+
+secondfield="integer";
+

@@ -1,0 +1,11 @@
+title="TheTitle";
+fields={"firstField","secondfield"};
+buttons={"buttonOne","buttonTwo"};
+
+#!#
+#a
+
+firstField="string";
+buttonOne = "QueryListener";
+buttonTwo = "qlistener";
+secondfield="string";

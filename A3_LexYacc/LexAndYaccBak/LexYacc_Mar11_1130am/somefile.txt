@@ -1,0 +1,7 @@
+title="TheTitle";
+fields={"firstField","secondField","thirdfield","fourthfield"};
+buttons={"buttonOne","buttonTwo","buttonthree"};
+#!#
+astring="yah";
+lmfao            = "innitdoe";
+youdid = "yahbrah";
